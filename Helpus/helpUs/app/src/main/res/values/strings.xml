@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">HelpUs</string>
+    <string name="emails">Email</string>
+    <string name="passwords">Пароль</string>
+    <string name="names">Имя</string>
+    <string name="registrN">Регистрация</string>
+    <string name="logIn">Войти</string>
+    <string name="regs">Зарегистрироваться</string>
+    <string name="customer">Заказчик</string>
+    <string name="volunt">Волонтёр</string>
+    <string name="role">Выберите свою роль</string>
+    <string name="authorize">Авторизация</string>
+    <string name="logout">Выйти</string>
+    <string name="profile">Профиль</string>
+    <string name="settings">Настройки</string>
+    <string name="namef">Владислав Щербин</string>
+    <string name="avatars">avatars</string>
+    <string name="phoner">80333422233</string>
+    <string name="forgetpass">Восстановление пароля</string>
+    <string name="textformail">Введите ваш email для отправки письма</string>
+    <string name="textformail2">с паролем на вашу почту</string>
+    <string name="sendpassbutt">отправить</string>
+    <string name="askforinfo">Информация о вас</string>
+    <string name="name">Имя</string>
+    <string name="secname">Фамилия</string>
+    <string name="approve">Подтвердить</string>
+    <string name="retry">Проверка подключения</string>
+    <string name="phonenumber">Номер телефона</string>
+    <string name="response">Отклики</string>
+    <string name="photos">Фото</string>
+    <string name="addtask">Задачи</string>
+    <string name="addtasks">Добавить задачу</string>
+    <string name="age">Ваш возраст</string>
+    <string name="choose">Категории задач</string>
+    <string-array name="categories">
+        <item>Работа по дому</item>
+        <item>Покупки</item>
+        <item>Сопровождение</item>
+        <item>Доставка</item>
+    </string-array>
+    <string name="taskname">Краткое описание задачи</string>
+    <string name="taskadded">Добавить</string>
+    <string name="datehint">число.месяц.год (начало)</string>
+    <string name="datehint2">число.месяц.год (конец)</string>
+    <string name="zadach">Задачи</string>
+    <string name="accepttask">Принять задачу</string>
+    <string name="yourtask">Ваша задача</string>
+    <string name="call">Номер телефона</string>
+    <string name="showtask">Посмотреть задачи</string>
+    <string name="myAlphaNumeric">абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ </string>
+    <string name="filterphone">1234567890+</string>
+    <string name="date">1234567890</string>
+    <string name="user">Заказчик</string>
+    <string name="mess">Отправить сообщение</string>
+    <string name="chatlist">Чаты</string>
+    <string name="cat1">Быт</string>
+    <string name="cat2">Покупки</string>
+    <string name="cat3">Сопровождение</string>
+    <string name="cat4">Доставка</string>
+    <string name="datetask">Выбрать дату</string>
+    <string name="datetext">Дата задачи</string>
+    <string name="start">Начать</string>
+    <string name="data">Контактные данные:</string>
+    <string name="rarting">Рейтинг:</string>
+    <string name="alltaskinf">Ваша задача</string>
+    <string name="listtasks">Список задач</string>
+    <string name="male">Mужчина</string>
+    <string name="female">Женщина</string>
+    <string name="approved">Подтвердить</string>
+    <string name="title_activity_profilevolunteer">profilevolunteer</string>
+    <string name="aged">Возраст:</string>
+    <string name="typeuser">Заказчик</string>
+    <string name="volunteer">Волонтер</string>
+    <string name="responses">Отклики</string>
+    <string name="volunteeraccepted">Принял заказ</string>
+    <string name="urtaskacceptordecline">Ваша задача</string>
+    <string name="calltozak">Создал задание</string>
+    <string name="chooseotklik">Выберите отклик</string>
+    <string name="listresponces">Отклик</string>
+</resources>

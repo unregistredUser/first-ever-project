@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgforacceptordecline"
+    tools:context=".domain.presentation.declineoraccept">
+    <LinearLayout
+        android:id="@+id/lineardeclineoraccept"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@drawable/squarefortext"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/declineoraccepttask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/urtaskacceptordecline"
+        android:textColor="#535353"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/linearacceptordecline"
+        android:layout_width="320dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lineardeclineoraccept">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/catimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="30dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:shapeAppearanceOverlay="@style/circle"
+            app:srcCompat="@drawable/housework"
+            tools:layout_editor_absoluteY="122dp" />
+
+        <TextView
+            android:id="@+id/cattask"
+            android:layout_width="179dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+
+            android:fontFamily="sans-serif-medium"
+            android:text="Работа по дому"
+            android:textColor="#000000"
+            android:textSize="21sp"
+            app:layout_constraintBottom_toTopOf="@+id/nametask"
+            app:layout_constraintStart_toEndOf="@+id/catimage"
+            app:layout_constraintTop_toBottomOf="@+id/linearaccept"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearacceptedordeclined2"
+        android:layout_width="320dp"
+        android:layout_height="150dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearacceptordecline">
+
+        <TextView
+            android:id="@+id/nametask"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="sans-serif-medium"
+            android:inputType="textMultiLine"
+            android:text="Выгулять пса 2 раза за сутки"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="292dp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearacceptordecline4"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearacceptedordeclined2">
+
+        <TextView
+            android:id="@+id/datetask"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="c 30-02 по 01-03"
+            android:textColor="#858484"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="465dp" />
+    </LinearLayout>
+    <LinearLayout
+       android:id="@+id/layoutacceptordecline5"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearacceptordecline4">
+
+        <Button
+            android:id="@+id/galochka"
+            android:layout_width="58dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="80dp"
+            android:backgroundTint="#C95EBA54"
+            android:fontFamily="sans-serif-medium"
+            android:text="✓"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:cornerRadius="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="510dp" />
+
+        <Button
+            android:id="@+id/krestik"
+            android:layout_width="58dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="50dp"
+            android:backgroundTint="#C9F35656"
+            android:fontFamily="sans-serif-medium"
+            android:text="✖"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:cornerRadius="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="510dp" />
+    </LinearLayout>
+    <LinearLayout
+       android:id="@+id/linearbottomaccept"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+
+        android:background="@drawable/border"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/toprofile"
+            android:layout_width="105dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/toprofile"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="408dp" />
+
+        <ImageView
+            android:id="@+id/mytasks"
+            android:layout_width="105dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/taskclicked"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="473dp" />
+
+        <ImageView
+            android:id="@+id/addtask"
+            android:layout_width="105dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/addtask" />
+
+        <ImageView
+            android:id="@+id/call"
+            android:layout_width="105dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/phonecall"
+            tools:layout_editor_absoluteX="63dp"
+            tools:layout_editor_absoluteY="478dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

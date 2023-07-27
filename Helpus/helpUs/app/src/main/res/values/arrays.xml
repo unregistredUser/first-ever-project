@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hellouser">
+        <item>Помогать</item>
+        <item>и</item>
+        <item>становиться</item>
+        <item>лучше</item>
+    </string-array>
+</resources>

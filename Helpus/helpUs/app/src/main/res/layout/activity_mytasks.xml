@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgfortasks"
+    tools:context=".domain.presentation.mytasks">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mytasklistrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="630dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearmytask" />
+
+    <LinearLayout
+        android:id="@+id/linearmytask"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@drawable/squarefortext"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mytaskname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/chooseotklik"
+        android:textColor="#535353"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/layoutmytask"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@drawable/border"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/toprofile"
+            android:layout_width="105dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/toprofile"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="408dp" />
+
+        <ImageView
+            android:id="@+id/mytasks"
+            android:layout_width="105dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/taskclicked"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="473dp" />
+
+        <ImageView
+            android:id="@+id/addtask"
+            android:layout_width="105dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/addtask" />
+
+        <ImageView
+            android:id="@+id/call"
+            android:layout_width="105dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/phonecall"
+            tools:layout_editor_absoluteX="63dp"
+            tools:layout_editor_absoluteY="478dp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar6"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/mytasklistrecycler"
+        app:layout_constraintTop_toTopOf="@+id/linearmytask" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
